@@ -41,3 +41,5 @@ async function askName() {
     });
     playerName = answers.player_name;
 }
+
+await askName();
