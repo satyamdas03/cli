@@ -58,3 +58,15 @@ async function question1() {
     });
     return handleAnswers(answers.question_1 == 'Dec 4th 1995');
 }
+
+async function handleAnswer(isCorrect) {
+    const spinner = createSpinner('checking answer....').start();
+    await sleep();
+    if (isCorrect) {
+        spinner.success({ text: `Nice work ${playerName}. That's a legit answer` });
+    }
+    else {
+        spinner.error({ text: `Game over, you lose ${playerName}!` });
+        process.exit(1);
+    }
+}
