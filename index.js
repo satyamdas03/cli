@@ -70,3 +70,6 @@ async function handleAnswer(isCorrect) {
         process.exit(1);
     }
 }
+
+
+await question1();
