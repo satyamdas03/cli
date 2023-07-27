@@ -7,7 +7,7 @@ import chalkAnimation from 'chalk-animation';
 import figlet from "figlet";
 import { createSpinner } from "nanospinner";
 
-console.log(chalk.bgGreen('hello world'));
+// console.log(chalk.bgGreen('hello world'));
 
 let playerName;
 
@@ -27,3 +27,5 @@ async function welcome() {
         So get the questions right
     `);
 }
+
+await welcome()
