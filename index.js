@@ -17,5 +17,13 @@ async function welcome() {
     const rainbowTitle = chalkAnimation.rainbow(
         "who wants to be a millionare? \n"
     );
-    await sleep;
+    await sleep();
+    rainbowTitle.stop();
+
+    console.log(`
+        ${chalk.bgBlue('HOW TO PLAY')}
+        I am a process in your computer.
+        If you get any questions wrong I will be ${chalk.bgRed('killed')}
+        So get the questions right
+    `);
 }
