@@ -42,4 +42,13 @@ async function askName() {
     playerName = answers.player_name;
 }
 
-await askName();
+// await askName();
+
+async function question1() {
+    const answers = await inquirer.prompt({
+        name: 'question_1',
+        type: 'list',
+        message: 'JS was created in 10 and then was released on\n',
+
+    })
+}
