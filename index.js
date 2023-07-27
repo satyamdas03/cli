@@ -49,6 +49,12 @@ async function question1() {
         name: 'question_1',
         type: 'list',
         message: 'JS was created in 10 and then was released on\n',
-
-    })
+        choices: [
+            'May 23rd, 1995',
+            'Nov 24th 1995',
+            'Dec 4th 1995',
+            'Dec 17th 1996'
+        ],
+    });
+    return handleAnswers(answers.question_1 == 'Dec 4th 1995');
 }
