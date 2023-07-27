@@ -13,7 +13,7 @@ const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
 async function welcome() {
     const rainbowTitle = chalkAnimation.rainbow(
-        'Who Wants To Be A JavaScript Millionaire? \n'
+        'Want to test your JS GK? \n'
     );
 
     await sleep();
